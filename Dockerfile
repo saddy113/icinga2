@@ -10,7 +10,7 @@ RUN apt-get -y update \
 RUN	apt-get -y install mailutils ssmtp
 RUN apt-get --no-install-recommends -y install nagios-nrpe-plugin
 COPY commands.conf /etc/icinga2/conf.d/commands.conf
-COPY 192-168-1-126.conf /etc/icinga2/conf.d/
+#COPY 192-168-1-126.conf /etc/icinga2/conf.d/
 COPY bank.conf /etc/icinga2/conf.d/
 COPY ssmtp.conf /etc/ssmtp/ssmtp.conf
 
